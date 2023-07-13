@@ -1,5 +1,6 @@
+'use client';
 import { useRef } from 'react';
-import { postCommentToDatabase } from '../../apiManagement/apiHandler';
+// import { postCommentToDatabase } from '../../apiManagement/apiHandler';
 
 const Reply = (props: { parentId: string }) => {
   const replyContent = useRef<HTMLTextAreaElement>(null);
@@ -20,10 +21,10 @@ const Reply = (props: { parentId: string }) => {
           e.preventDefault();
           console.log('This is replyContent', replyContent.current?.value);
           console.log('', replyContent, props.parentId);
-          postCommentToDatabase(
-            replyContent.current?.value || '',
-            props.parentId
-          );
+          // postCommentToDatabase(
+          //   replyContent.current?.value || '',
+          //   props.parentId
+          // );
         }}
       />
     </form>
