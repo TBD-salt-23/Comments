@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { CommentT } from '../../types';
 import Reply from '../Reply/Reply';
 import { getCommentsFromApi } from '@/app/apiManagement/apiHandler';
-// import { getCommentArayByParentId } from '@/app/db/dbHandlers';
-// import { fetchAllComments } from '../../apiManagement/apiHandler';
 
 type RenderCommentProps = {
   parentComment: CommentT;
