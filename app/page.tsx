@@ -4,6 +4,7 @@ import { CommentT } from './types';
 import { getCommentsFromApi } from './apiManagement/apiHandler';
 // import './App.css';
 import Reply from './component/Reply/Reply';
+import IndexPage from './google/page';
 // import { fetchAllComments } from './apiManagement/apiHandler';
 // import { getCommentArrayByParentId } from './db/dbHandlers';
 
@@ -51,4 +52,13 @@ const App = async () => {
   );
 };
 
+export const getServersideProps = (ctx: any) => {
+  return {
+    props: {
+      session:
+        '// define logic to get user session here, this will be part of pageProps in _app.js',
+      //...
+    },
+  };
+};
 export default App;
