@@ -21,7 +21,9 @@ export default function IndexPage() {
     <div>
       <button
         onClick={() =>
-          signIn('google', { callbackUrl: 'http://localhost:3000/' })
+          signIn('google', {
+            callbackUrl: 'http://localhost',
+          })
         }
       >
         sign in with gooogle
