@@ -39,6 +39,7 @@ const App = async () => {
   console.log('Here is the childrenArray', childrenArray);
   return (
     <>
+      <IndexPage />
       {initialComments.map((comment: CommentT) => {
         return (
           <RenderComment
